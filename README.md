@@ -6,9 +6,9 @@
   <br><br>
 </p>
 
-Fast Facts is a web application that enables students to take back their time. This repo holds our reveal.js based pitch presentation for Hack Western 9!
+Fast Facts is a web application that enables students to take back their time. This repo holds our reveal.js based pitch presentation for Hack Western 9! Check it out <a href="https://lblommesteyn.github.io/hw9-pitch/">here!
 
-# Pitch Contents
+# Pitch Contents 
 
 ### The Problem 
 <br>
@@ -17,9 +17,6 @@ Fast Facts is a web application that enables students to take back their time. T
 <br>
 
 ### Our Impact
-<br>
-
-### The Problem 
 <br>
 
 ### Live Demo

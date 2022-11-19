@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Fast Facts Pitch</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,29 +16,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<img data-id="logo" src="examples\assets\hw9-logo.png" style="position: absolute; top: -4%; left: -20%; width: 8.5%; height: 10%;"/>
 				<section data-auto-animate> 
 					<!-- Header in middle of slide -->
 					<h1 style="text-align: center; position: relative;">FAST FACTS</h1>
-					<!--hw9 logo below the title relative to the slide-->
-					<img data-id="logo" src="examples\assets\hw9-logo.png" style="position: absolute; bottom: 85%; right: 37%; width: 25%; z-index: 1;"/>
+					<!--hw9 logo right above the h1-->
+					
 					<a>fastfactswith.tech</a>
 				</section>
-				<section data-auto-animate>
+				<section>
+					<section data-auto-animate>
 					<!--hw9 logo in top left corner of slide with auto animate on-->
-					<img data-id="logo" src="examples\assets\hw9-logo.png" style="position: absolute; bottom: 575%; left: -20%; width: 7%; z-index: 1;"/>
 					THE PROBLEM
-					<section>
-						<p class="fragment">Statistics</p>
-						<p class="fragment">According to a survey done by our team</p>
-						<p class="fragment">100% Students hate reading textbooks</p>
-						<p class="fragment">Students time is limited so anything that can save our precious time is a must have</p>
-					</section>
 				</section>
+				<section>
+					<p>Through our research:</p>
+					<p class="fragment"><b>100%</b> Students hate reading textbooks</p>
+					<p class="fragment">Over <b>95%</b>  of students wish that they had more time to study</p>
+					<p class="fragment">Students on average spend <b>over 7 hours per week</b> reading textbooks</p>
+					</section>
+					</section>
 				<section data-auto-animate>
 					<!--hw9 logo in top left corner of slide with auto animate on-->
 					
 					<section data-auto-animate>
-						<img data-id="logo" src="examples\assets\hw9-logo.png" style="position: absolute; bottom: 575%; left: -20%; width: 7%; z-index: 1;"/>
 						IMPACT
 					</section> 
 					<section>
@@ -46,16 +47,44 @@
 						<h2>Reduced the amount of characters needed to be read by 50%</h2>
 					</section>
 					<section>
-						<!--stat on our impact our project had on the amount of time needed to read text-->
-						<h2>Reduced the amount of time needed to read by 80%</h2>
-					</section>
-					<section>
+						<!--stat on our impact our project had on the amount of time needed to study-->
+						<h2>Reduced the amount of time needed to study by <b>3 hours per week</b></h2>
+				</section>
+				<section>
 						<!--stat on our hours saved over an academic term-->
-						<h2>Over 100 hours saved over an academic term</h2>
+						<h2>Over <b>100 hours</b> saved over an academic year</h2>
 					</section>
 				</section>
-
-				<section>WHAT WE BUILT</section>
+				<Section data-auto-animate>
+					<section>WHAT WE BUILT</section>
+					<section>
+						<h2>Fast Facts</h2>
+						<p>Fast Facts is a web application that allows students to quickly and easily access the most important information from their textbooks.</p>
+					</section>
+					<section>
+						<h2>How it works</h2>
+						<p>Students can upload their textbook and our algorithm will automatically generate a summary of the most important information.</p>
+					</section>
+					<section data-auto-animate>
+						<h2>How we did it</h2>
+						<ul>
+							<li>We scan the text using the google vision api</li>
+							<!--google vision api set to the middle of the slide-->
+							<img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0c51d2c2e5f85fe45126eb818f748267/google-cloud-vision-api.png" style="position: relative; top: 100%; left: 40%; width: 20%;"/>
+						</ul>					
+					</section>
+					<section data-auto-animate>
+						<h2>How we did it</h2>
+						<ul>
+							<li>We scan the text using the google vision api</li> 
+							<li>Use the Cohere api to generate a summary of the text</li>
+							<!--google vision api set to the middle of the slide-->
+							<img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0c51d2c2e5f85fe45126eb818f748267/google-cloud-vision-api.png" style="position: relative; top: 100%; left: 60%; width: 20%;"/>
+							<!--cohere logo set to the left of the google vision image move the div below up slightly-->
+							<img src="https://cdn.sanity.io/images/rjtqmwfu/production/572048a4c0309a03493e1bcf7bbd3c4d64d088e5-1552x446.svg" style="position: relative; left: -10%; width: 30%;"/>
+						</ul>
+					</section>
+				</Section>
 				<section>DEMO</section>
 			</div>
 		</div>
@@ -70,7 +99,6 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
